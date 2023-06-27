@@ -1,0 +1,154 @@
+input[type=message], input[type=email], input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+/* Gaya submit button dengan warna latar belakang tertentu dll */
+button[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+div.stButton > button:first-child {
+    background-color: #0099ff;
+    color:#ffffff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 217, 255, 0.637); 
+    font-weight: 700
+}
+
+div.stButton > button:hover {
+    background-color: hsl(70, 100%, 50%);
+    color:#241c01;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    border: 2px solid #ccc; 
+    font-weight: 700
+}
+
+
+/* Saat menggerakkan mouse di atas submit button, tambahkan warna hijau yang lebih gelap */
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+  
+/* Sembunyi logo Streamlit */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+
+.navbar{
+    font-family: "Source Sans Pro", sans-serif;
+    position: fixed;
+    width: 100%;
+    background: #0000de;
+    z-index: 99999999999999999999;
+    left: 0rem;
+    top: 0rem;
+    height: 55px;
+}
+
+.navitem{
+    float: left;
+    display: block;
+    color: #efefff !important;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none !important;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    font-weight: 700
+}
+
+.navitem:hover{
+    background-color: #333;
+    height: 55px !important;
+}
+
+
+.settings{
+    height:1rem;
+}
+
+.version-span{
+    color: white;
+    position: absolute;
+    right: 1rem;
+    bottom: 1.75rem;
+    opacity: 0.5;
+    z-index: 9999;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background: #333;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    height: 55px;
+    opacity: 0.5;
+    filter: invert(1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    opacity:1;
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    right: 0rem;
+    top: 0rem;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    position: fixed;
+    border-radius: 9px;
+    background-color: #333;
+    min-width: 160px;
+    overflow: auto;
+    right:0.3rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropbtn:hover{
+    background-color: rgb(16, 0, 86);
+    background: rgba(21, 4, 219, 0.233);
+}
+
+.dropdown a:hover {background-color: rgba(221, 221, 221, 0.233);}
+
